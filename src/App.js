@@ -42,7 +42,6 @@ function App() {
             ['Ano', 'Bolsistas', 'Empresas'],
             ['2016', 25, 22],
             ['2018', 53, 42],
-            ['2019', 60, 45],
           ]}
           options={{
             title: 'Total de Beneficiados',
