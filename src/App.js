@@ -15,7 +15,7 @@ function App() {
           loader={<div> Carregando Chart </div>}
           data={[
             ['Programa', 'Investimentos Funcap', 'Investimento Total'],
-            ['Ivafit 05/2016', 431715.70, 474827.81],
+            ['Inovafit 05/2016', 431715.70, 474827.81],
             ['Inovafit 04/2018', 2411781.48, 2714349.89],
             ['Inovafit 08/2018', 1647225.36, 1838127.88],
             ['Conecta  Funcap - Cegás', 147000.00, 447000.00],
@@ -87,10 +87,10 @@ function App() {
           ]}
           options={{
             hAxis: {
-              title: 'Time',
+              title: 'Ano',
             },
             vAxis: {
-              title: 'Popularity',
+              title: 'R$',
             },
           }}
           rootProps={{ 'data-testid': '1' }}
@@ -110,7 +110,7 @@ function App() {
             ['Conecta  Funcap - Cegás', 147000.00],
           ]}
           options={{
-            title: 'My Daily Activities',
+            title: 'Investimentos',
           }}
           rootProps={{ 'data-testid': '1' }}
         />
@@ -123,11 +123,9 @@ function App() {
           height={'300px'}
           chartType="GeoChart"
           data={[
-            ['Country', 'Popularity'],
+            ['País', 'Atuação'],
             ['Brazil', 100],
           ]}
-          // Note: you will need to get a mapsApiKey for your project.
-          // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
           mapsApiKey="YOUR_KEY_HERE"
           rootProps={{ 'data-testid': '1' }}
         />
